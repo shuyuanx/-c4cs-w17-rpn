@@ -9,5 +9,9 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate('5 3 -')
 		self.assertEqual(2, result)
 	def test_exponentiation(self):
-		result = rpn.calculate('2 3 ^')
-		self.assertEqual(8, result)
+		newResult = rpn.calculate('2 3 ^')
+		self.assertEqual(8, newResult)
+
+
+if __name__ == "__main__":
+	unittest.main(verbosity=2)
