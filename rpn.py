@@ -34,7 +34,7 @@ def main():
 		result = calculate(user_input)
 		text = colored(user_input, 'red', attrs=['reverse', 'blink'])		
 	
-		print(user_input[0])
+		print(text)
 		print("Result:", result)
 
 if __name__ == '__main__':
