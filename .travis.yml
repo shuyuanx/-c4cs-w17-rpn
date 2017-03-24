@@ -5,6 +5,5 @@ install:
   - pip install coverage
 script:
   coverage run modified.py
-  coverage report 
 after_success:
   coverage report
