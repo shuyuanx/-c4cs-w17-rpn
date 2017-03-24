@@ -1,4 +1,10 @@
 language: python
 python:
   - "3.5"
-script: python test_rpn.py
+install:
+  - pip install -r requirements.txt
+  - pip install coveralls
+script:
+  coverage run --source=coverage modified.py test
+after_success:
+  coveralls
