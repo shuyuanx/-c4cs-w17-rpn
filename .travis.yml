@@ -2,7 +2,7 @@ language: python
 python:
   - "3.5"
 install:
-  - pip install request
+  - pip install requests
   - pip install coverage
 script:
   coverage run modified.py
